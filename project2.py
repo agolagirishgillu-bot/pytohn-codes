@@ -1,0 +1,10 @@
+x=21
+y=27
+c=8
+l=5
+u=9
+print(x)
+print(y)
+print(c)
+print(l)
+print(u)
