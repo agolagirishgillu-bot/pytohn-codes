@@ -1,0 +1,6 @@
+print('wakes up for school at 6;30 am')
+print('meet friends')
+print('comes back at home at 2:10pm')
+print('plays outside')
+print('does dinner ')
+print('sleeps at 10:30')
