@@ -1,1 +1,7 @@
-print('hello world')
+print('I wake up for school at 6:30 am')
+print('meets friend at school')
+print('Comes home at 2:00pm')
+print('Does H.W')
+print('Plays with friend')
+print('Eating dinner')
+print('Sleeps at 10:00pm')
