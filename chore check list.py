@@ -16,7 +16,7 @@ while chore_num <=total_chore:
       a=input(f'you have {next_chore} finished your chore(yes/no)')
 
       if a=='yes':
-           completed_count+=1
+           complete_count+=1
            chore_num+=1
            print('great job')
         
@@ -26,5 +26,5 @@ while chore_num <=total_chore:
 
 print('=================CHORES SUMMARY============')
 print('chores assigned today',total_chore)
-print('chores completed',completed_count)
-print('cchores left to do',total_chore-completed_count)
+print('chores completed',complete_count)
+print('cchores left to do',total_chore-complete_count)
