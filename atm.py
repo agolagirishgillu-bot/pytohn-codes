@@ -81,7 +81,7 @@ for slot in range(1, 7): # outer for -- one denomination per loop
   if slot == 1: value, total = 100, total_100
 
   elif slot == 2: value, total = 50, total_50
-
+ 
   elif slot == 3: value, total = 20, total_20
 
   elif slot == 4: value, total = 10, total_10
