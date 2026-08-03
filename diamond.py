@@ -9,3 +9,7 @@ for i in range(1,halfdiamond+1):
         print(end='')
         space-=1
     n=1
+for f in range(2*i,+1):
+    space+=1
+    n+=1
+    
