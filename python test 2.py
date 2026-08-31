@@ -1,5 +1,5 @@
 import random
-ops=['subtract','add','multiplication','division']
+ops=['subtract','multiplication','division','add']
 c=random.choice(ops)
 print('random operation is',c)
 try:
@@ -11,26 +11,26 @@ except ValueError:
     print('enter a valid num')
 
 if c=='subttract':
-    def s(a,b):
-        d=a-b
-        return d
-    e=s(a,b)
+    def subtract(a,b):
+        d=(a-b)
+        return(d)
+    e=subtract(a,b)
     print(e)
 elif c=='add':
     def add(a,b):
-        f=a+b
+        f=(a+b)
         return f
     g=add(a,b)
     print(g)
 elif c=='mutliplicatoin':
-    def m(a,b):
-        h=a*b
+    def multiplication(a,b):
+        h=(a*b)
         return h
-    i=m(a,b)
-    print(i)
+    z=multiplication(a,b)
+    print('ans is ',z)
 elif c=='division':
     def division(a,b):
-        j=a/b
+        j=(a/b)
         return j
     k=division(a,b)
     print(k)
