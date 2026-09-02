@@ -4,7 +4,7 @@ print('original list',l)
 c=0
 
 for i in l:
-    c+=1
+    c+=i
 
 s=c
 avg=s/len(l)
