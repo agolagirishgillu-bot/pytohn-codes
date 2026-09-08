@@ -7,7 +7,7 @@ def palind(r):
        else:
           return True
 
-r=(1,2,3,3,2,1)
+r=(1,2,3,3,2,)
 if palind(r)==False:
    print('not flip flop')
 else:
