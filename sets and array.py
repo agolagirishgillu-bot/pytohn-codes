@@ -13,7 +13,7 @@ a.append(6)
 print(a)
 a.reverse()
 print(a)
-z=[1,2,33,44,44,44]
+z=arr.array[1,2,33,44,44,44]
 print(z)
 t=z.count(44)
 print(t)
