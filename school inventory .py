@@ -1,16 +1,31 @@
-items=['glue','eraser','pen','sharpener']
-print(items)
-items_q=[7,0,6,4]
-print(items_q)
-inv= {items:count for items,count in zip(items,items_q)}
-print(inv)
+items = ["pencil", "eraser", "notebook", "sharpener", "glue"]
+stock_counts = [12, 0, 8, 5, 3]
+inventory = {item: count for item, count in zip(items, stock_counts)}
+print("Full Inventory:", inventory)
 
-items_chosen=input('enter the item u want')
-if items_chosen in inv:
-    print('in stock')
+in_stock_items = [item for item in items if inventory[item] > 0]
+print("Items In Stock:", in_stock_items)
+
+chosen_item = input("Which item do you want to buy? ")
+
+if chosen_item not in inventory or inventory[chosen_item] == 0:
+    print(chosen_item, "is out of stock! Stopping the checker.")
     exit()
-else:
-    print('out fo stock')
 
+prices = [10, 5, 40, 15, 20]
+markup = 200
 
-print('=====SUMMARY=====')
+marked_up_prices = list(map(lambda p: p + markup, prices))
+print("Marked Up Prices:", marked_up_prices)
+
+item_index = items.index(chosen_item)
+chosen_price = marked_up_prices[item_index]
+print("Price of", chosen_item, "after markup:", chosen_price)
+
+inventory[chosen_item] = inventory[chosen_item] - 1
+print(chosen_item, "purchased! Remaining stock:", inventory[chosen_item])
+
+print("===== SCHOOL STORE INVENTORY CHECKER =====")
+print("Item Bought:", chosen_item)
+print("Price Paid:", chosen_price)
+print("Updated Inventory:", inventory)
