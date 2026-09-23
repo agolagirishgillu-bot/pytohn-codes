@@ -1,17 +1,33 @@
-students={'id1':{'name':'jack','score':'10'}
-          ,'id2':{'name':'emma','score':'30'}
-          ,'id3':{'name':'ally','score':'35'}
-          ,'id4':{'name':'charlie','score':'40'}
-          ,'id5':{'name':'john','score':'50'}}
-print(students)
 
-print(students.get('id1','not found'))
+grades = {"Alice":   88,
+          "Bob":     73,
+          "Charlie": 95,
+          "Diana":   61,
+          "Eve":     82,
+          }
+print(grades)
 
-print(max(students))
-print(min(students))
+print("=")
+print("STUDENT GRADE BOOK")
+print("=")
 
-search=input('enter the u wnat to search')
-if search not in students:
-    print('not found in list')
+total = 0
+for score in grades.values():
+    total = total + score
+average = total / len(grades)
+print("Class average ",average)
+
+
+top_student    = max(grades, key=grades.get)
+bottom_student = min(grades, key=grades.get)
+print(f'Highest score : {top_student} ')
+print(f'Lowest score  : {bottom_student}')
+
+
+
+name = input("Look up a student (enter name): ")
+score = grades.get(name, None)
+if score is not None:
+    print(f"{name}'s score: {score}")
 else:
-    print(students.get(search))
+    print(f"{name} was not found in the grade book.")
