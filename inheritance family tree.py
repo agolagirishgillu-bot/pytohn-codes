@@ -32,3 +32,5 @@ h1=kid('blue',120,10,'maya')
 h1.function('painting')
 
 h1.print2()
+
+print((issubclass(kid,parent)))
