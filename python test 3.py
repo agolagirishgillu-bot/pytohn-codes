@@ -14,6 +14,7 @@ print("=")
 total = 0
 for score in grades.values():
     total = total + score
+
 average = total / len(grades)
 print("Class average ",average)
 
