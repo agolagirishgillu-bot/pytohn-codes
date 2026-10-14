@@ -8,14 +8,19 @@ class books:
 
     def detail(self,c):
         self.c=c=input('enter the book which u want to borow:')
+
+        if c=='book1':
+                print('books name is ',self.title)
+                print('books author is ',self.author)
     
         print(book.get(c))
 
     def borrow(self):
             print('borrowed successfully!')
 
-            print(book)==book[self.c]-1
-
+            book[self.c]=book[self.c]-1
+            print(book)
+           
     def return_(self):
         e=input('do u want to return the book:')
         if e=='yes':
@@ -25,14 +30,17 @@ class books:
             if f==self.c:
                 print('ok returned!')
 
-            print(book)==book[self.c]+1
+                book[self.c]=book[self.c]+1
+                print(book)
 
-            
+            else:
+                 print('book not verified.')
+
+        else:
+             print('ok u do not want to return the book.')   
 
 
 b=books('HELLO','HI')
-b.title
-b.author
 b.detail(10)
 b.borrow()
 b.return_()
