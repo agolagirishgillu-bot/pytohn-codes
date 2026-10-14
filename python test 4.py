@@ -44,4 +44,3 @@ b=books('HELLO','HI')
 b.detail(10)
 b.borrow()
 b.return_()
-    
